@@ -6,9 +6,9 @@ export default function NavBar() {
       {/* Logo */}
       <div className="mb-12">
         <img
-          src="https://i.imgur.com/Z5P2t3z.png"
+          src="https://imgur.com/T7E7ZTl.png"
           alt="Logo"
-          className="w-12 h-12 rounded-full"
+          className="w-10 h-10 rounded-full"
         />
       </div>
 
