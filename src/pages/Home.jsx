@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="ml-40 flex h-screen w-[calc(100vw-10rem)]">
       {/* Left side */}
-      <div className={`flex-1 h-full transition-opacity duration-2000 ease-out ${loaded ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`flex-1 h-full transition-opacity duration-2250 ease-out ${loaded ? 'opacity-100' : 'opacity-0'}`}>
         <img
           src="https://imgur.com/tZBa0Be.png"
           alt="Arya headshot"
@@ -22,10 +22,15 @@ function Home() {
       <div className="flex-1 flex flex-col px-12 bg-white justify-center">
         <div className={`flex flex-col items-center w-full transition-opacity duration-2000 ease-out delay-200 ${loaded ? 'opacity-100' : 'opacity-0'}`}>
           {/* Intro */}
-          <div className="mb-10 w-full mt-10">
+          <div className={`mb-10 w-full mt-10 transition-all duration-1000 ease-out ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-5xl font-light mb-4 text-gray-800">Hi, I'm Arya</h1>
             <p className="text-xl font-light text-gray-600">I'm a developer!</p>
           </div>
+
+          {/* Recent Projects title */}
+          <h2 className={`text-2xl font-light text-center mb-6 w-full transition-all duration-1000 ease-out ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            Recent Projects
+          </h2>
 
           {/* Projects section */}
           <div className="grid grid-cols-2 gap-6 w-full">
