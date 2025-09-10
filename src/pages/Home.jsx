@@ -50,6 +50,8 @@ function Home() {
               <a
                 key={project.title}
                 href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`flex flex-col h-50 w-full rounded shadow-md overflow-hidden transition-all duration-1000 ease-out transform hover:scale-105 hover:brightness-110 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} delay-${index * 100}`}
               >
                 <img

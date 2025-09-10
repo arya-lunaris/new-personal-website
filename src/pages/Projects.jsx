@@ -6,28 +6,28 @@ const projects = [
     description:
       'A web-based multiplayer RPG game featuring quests, battles, and character progression, built with Phaser and Node.js.',
     image: 'https://imgur.com/rHGJUW1.png',
-    link: 'https://psquest.example.com',
+    link: 'https://psquest.netlify.app/',
   },
   {
     title: 'Toonder',
     description:
       'A task and project management tool designed for teams to collaborate efficiently, developed using React and Django.',
     image: 'https://imgur.com/XJc2So8.png',
-    link: 'https://toonder.example.com',
+    link: 'https://app-toonder.netlify.app/',
   },
   {
     title: 'Stranger Tales',
     description:
       'An interactive storytelling platform where users can create and share their own stories, created with Vue.js and Firebase.',
     image: 'https://imgur.com/y4os3JF.png',
-    link: 'https://strangertales.example.com',
+    link: 'https://stranger-tales.netlify.app/',
   },
   {
     title: 'Wordle',
     description:
       'A clone of the popular word-guessing game with additional features and daily challenges, built using React and TypeScript.',
     image: 'https://imgur.com/IQOoqH9.png',
-    link: 'https://wordle.neilram.dev',
+    link: 'https://arya-lunaris.github.io/game-project-wordle/',
   },
 ];
 
