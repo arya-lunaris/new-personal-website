@@ -59,14 +59,14 @@ export default function Projects() {
             <div
               className={`transition-all duration-1000 ${
                 fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-              } w-full`}
+              } w-full transform hover:scale-105 hover:brightness-110`}
             >
               <img
                 src={image}
                 alt={`${title} screenshot`}
                 className="w-full h-48 object-cover rounded-lg shadow-md"
               />
-              <h2 className="text-2xl font-light">{title}</h2>
+              <h2 className="text-2xl font-light mt-4">{title}</h2>
               <p className="text-base font-light text-gray-600">{description}</p>
             </div>
           </a>
