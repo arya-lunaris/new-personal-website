@@ -13,7 +13,7 @@ function Home() {
       {/* Left side */}
       <div className={`flex-1 h-full transition-opacity duration-2250 ease-out ${loaded ? 'opacity-100' : 'opacity-0'}`}>
         <img
-          src="https://i.imgur.com/wXIBxUS.png"
+          src="https://i.imgur.com/yozC82P.jpeg"
           alt="Arya headshot"
           className="w-full h-full object-cover"
         />
@@ -26,9 +26,11 @@ function Home() {
           <div className={`mb-10 w-full transition-all duration-1000 ease-out text-center ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-5xl font-extralight mb-4 text-gray-800">
               Hello, I'm{' '}
-              <Link to="/about" className="font-normal hover:underline decoration-2 decoration-gray-700">
-                Arya
-              </Link>
+              <span className="inline-block transform transition duration-300 hover:scale-105">
+                <Link to="/about" className="no-underline">
+                  &lt;Arya&gt;
+                </Link>
+              </span>
             </h1>
             <hr className="m-5"></hr>
             <p className="text-xl font-light text-gray-600 mb-5">I build minimalist, thoughtful, and beautiful web applications</p>
@@ -67,7 +69,7 @@ function Home() {
           </div>
           <a
             href="/projects"
-            className="mt-8 w-[200px] border border-gray-300 text-center py-3 px-6 text-gray-700 font-light mx-auto transform transition-transform duration-300 hover:scale-105 rounded-3xl mt-12"
+            className="glass-button mt-10"
           >
             View All Projects
           </a>
