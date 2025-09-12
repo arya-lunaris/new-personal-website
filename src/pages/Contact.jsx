@@ -9,7 +9,7 @@ export default function Contact() {
 
   return (
     <div
-      className={`min-h-screen flex flex-col justify-start items-center pt-90 pl-40 p-6 transition-opacity transition-transform duration-700 ease-out ${
+      className={`min-h-screen flex flex-col justify-start items-center pt-75 pl-40 p-6 transition-opacity transition-transform duration-700 ease-out ${
         loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
       }`}
     >

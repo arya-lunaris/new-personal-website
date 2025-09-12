@@ -33,7 +33,7 @@ function Home() {
               </span>
             </h1>
             <hr className="m-5"></hr>
-            <p className="text-xl font-light text-gray-600 mb-5">I build minimalist, thoughtful, and beautiful web applications</p>
+            <p className="text-xl font-light text-gray-600 mb-5">I build minimalist, creative, and beautiful web applications</p>
           </div>
 
           {/* Recent Projects title */}

@@ -15,7 +15,7 @@ export default function NavBar() {
       </div>
 
       {/* Links */}
-      <div className="flex-1 flex flex-col justify-center space-y-6 text-gray-700 font-light mb-60 text-center">
+      <div className="flex-1 flex flex-col justify-center space-y-6 text-gray-700 font-[400] mb-75 text-center text-[17px]">
         <div className="relative">
           <a
             href="/"
