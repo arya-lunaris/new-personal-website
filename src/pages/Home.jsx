@@ -39,7 +39,7 @@ function Home() {
 
           <a
             href="/projects"
-            className="glass-button"
+            className={`glass-button transition-all duration-1000 ease-out ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} -mt-10`}
           >
             View My Projects
           </a>

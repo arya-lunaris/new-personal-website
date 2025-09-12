@@ -29,6 +29,13 @@ const projects = [
     image: 'https://imgur.com/IQOoqH9.png',
     link: 'https://arya-lunaris.github.io/game-project-wordle/',
   },
+  {
+    title: 'Daft Punk Soundboard',
+    description:
+      'I made the Daft Punk soundboard for their iconic hit Harder, Better, Faster, Stronger.',
+    image: 'https://imgur.com/IBggIFP.png',
+    link: 'https://arya-lunaris.github.io/js-soundboard-start/',
+  },
 ];
 
 export default function Projects() {
@@ -41,7 +48,7 @@ export default function Projects() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center pl-40 transition-all duration-1000 font-light bg-white text-gray-800 px-12 py-16 ml-30">
       <h1
-        className={`text-5xl font-light mb-12 transition-all duration-1000 ${
+        className={`text-5xl font-extralight mb-12 transition-all duration-1000 ${
           fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
