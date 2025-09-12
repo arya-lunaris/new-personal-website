@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function NavBar() {
   return (
-    <nav className="fixed top-0 left-0 h-screen w-40 bg-white shadow-md flex flex-col items-center z-50 ">
+    <nav className="fixed top-0 left-0 h-screen w-65 bg-white shadow-md flex flex-col items-center z-50 ">
       <div className="mt-8">
         {/* Logo */}
         <a href="/">
@@ -15,7 +15,7 @@ export default function NavBar() {
       </div>
 
       {/* Links */}
-      <div className="flex-1 flex flex-col justify-center space-y-6 text-gray-700 font-[400] mb-75 text-center text-[17px]">
+      <div className="flex-1 flex flex-col justify-center space-y-6 text-gray-700 font-[400] mb-50 text-center text-[17px]">
         <div className="relative">
           <a
             href="/"

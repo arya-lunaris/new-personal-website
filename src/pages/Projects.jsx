@@ -39,7 +39,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center pl-40 transition-all duration-1000 font-light bg-white text-gray-800 px-12 py-16">
+    <div className="min-h-screen flex flex-col justify-center items-center pl-40 transition-all duration-1000 font-light bg-white text-gray-800 px-12 py-16 ml-30">
       <h1
         className={`text-5xl font-light mb-12 transition-all duration-1000 ${
           fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'

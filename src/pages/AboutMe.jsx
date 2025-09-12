@@ -23,7 +23,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen flex flex-col justify-center items-center pl-40 transition-all duration-1000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} font-light bg-white text-gray-800 px-12 py-16`}>
+    <div className={`ml-30 min-h-screen flex flex-col justify-center items-center pl-40 transition-all duration-1000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} font-light bg-white text-gray-800 px-12 py-16`}>
       <h1 className="text-5xl font-light mb-8 text-center">About Me</h1>
       <p className="max-w-3xl text-lg mb-12 text-center leading-relaxed">
         Coming from backgrounds in healthcare and fashion, I developed a strong sense of empathy, an eye for design, and a natural problem-solving mindset. But I’ve always had a deep affinity for the internet, technology, and gaming — you could say I’m a bit of a nerd at heart. I decided to finally pursue that passion and made a bold career pivot, graduating from General Assembly’s Software Engineering bootcamp in 2025. There, I gained hands-on experience with modern web development tools and practices. I’m especially drawn to front-end development, where I can combine my creative instincts with technical skills to build clean, user-friendly experiences. I’m excited to explore the vast opportunities in tech, and one day, I hope to find a place in the gaming industry.
