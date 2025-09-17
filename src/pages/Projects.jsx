@@ -46,7 +46,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center pl-40 transition-all duration-1000 font-light bg-white text-gray-800 px-12 py-16 ml-30">
+    <div className="min-h-screen flex flex-col justify-center items-center pl-40 transition-all duration-1000 font-light bg-white text-[#1D1D1F] px-12 py-16 ml-30">
       <h1
         className={`text-5xl font-extralight mb-12 transition-all duration-1000 ${
           fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
@@ -74,7 +74,7 @@ export default function Projects() {
                 className="w-full h-48 object-cover rounded-lg shadow-md"
               />
               <h2 className="text-2xl font-light mt-4">{title}</h2>
-              <p className="text-base font-light text-gray-600">{description}</p>
+              <p className="text-base font-light text-[#6E6E73]">{description}</p>
             </div>
           </a>
         ))}

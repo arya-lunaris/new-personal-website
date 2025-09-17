@@ -13,31 +13,31 @@ export default function Contact() {
         loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
       }`}
     >
-      <h1 className="text-5xl font-extralight mt-25 mb-5 text-center">Contact</h1>
-      <p className="text-center text-lg mb- max-w-xl font-light">
+      <h1 className="text-5xl font-extralight mt-20 mb-5 text-center text-[#1D1D1F]">Contact</h1>
+      <p className="text-center text-lg -mt-3 max-w-xl font-light text-[#1D1D1F]">
         Feel free to reach out through any of the platforms below!
       </p>
       <div className="flex flex-col space-y-15 w-full max-w-xs items-center mt-15">
-        <a href="mailto:arya.ram.dev@outlook.com" className="flex items-center font-medium transform transition duration-300 hover:scale-105 ">
-          <img src="https://i.imgur.com/5kED5be.gif" alt="Email icon" className="mr-5 scale-110" />
+        <a href="mailto:arya.ram.dev@outlook.com" className="flex items-center font-medium transform transition duration-300 hover:scale-105 text-[#1D1D1F] ">
+          <img src="https://i.imgur.com/5kED5be.gif" alt="Email icon" className="mr-5 scale-90" />
           Email
         </a>
         <a
           href="https://linkedin.com/in/arya-ram-"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center font-medium transform transition duration-300 hover:scale-105 ml-5"
+          className="flex items-center font-medium transform transition duration-300 hover:scale-105 ml-5 text-[#1D1D1F]"
         >
-          <img src="https://i.imgur.com/yGhylLQ.png" alt="LinkedIn icon" className="mr-5 scale-120" />
+          <img src="https://i.imgur.com/yGhylLQ.png" alt="LinkedIn icon" className="mr-5 scale-100" />
           LinkedIn
         </a>
         <a
           href="https://github.com/arya-lunaris"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center font-medium transform transition duration-300 hover:scale-105 ml-3"
+          className="flex items-center font-medium transform transition duration-300 hover:scale-105 ml-3 text-[#1D1D1F]"
         >
-          <img src="https://i.imgur.com/YsvojEn.gif" alt="GitHub icon" className="mr-5 scale-120" />
+          <img src="https://i.imgur.com/YsvojEn.gif" alt="GitHub icon" className="mr-5 scale-100" />
           GitHub
         </a>
       </div>
