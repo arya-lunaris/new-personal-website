@@ -46,8 +46,9 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center pl-40 transition-all duration-1000 font-light bg-white text-[#1D1D1F] px-12 py-16 ml-30">
+    <div className="min-h-screen flex flex-col justify-center items-center ml-65 transition-all duration-1000 font-light bg-white text-[#1D1D1F]">
       <h1
+        style={{ fontFamily: "'Fira Code', monospace" }}
         className={`text-5xl font-extralight mb-12 transition-all duration-1000 ${
           fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
