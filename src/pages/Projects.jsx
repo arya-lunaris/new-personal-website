@@ -46,16 +46,16 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center ml-65 transition-all duration-1000 font-light bg-white text-[#1D1D1F]">
+    <div className="min-h-screen flex flex-col justify-center items-center ml-40 md:ml-65 px-4 sm:px-8 md:px-12 py-12 sm:py-10 transition-all duration-1000 font-light bg-white text-[#1D1D1F]">
       <h1
         style={{ fontFamily: "'Fira Code', monospace" }}
-        className={`text-5xl font-extralight mb-12 transition-all duration-1000 ${
+        className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 text-center text-[#1D1D1F] transition-all duration-1000 ${
           fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
         Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl w-full px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-8 md:gap-12 max-w-7xl w-full">
         {projects.map(({ title, description, image, link }) => (
           <a
             key={title}
@@ -75,7 +75,7 @@ export default function Projects() {
                 className="w-full h-48 object-cover rounded-lg shadow-md"
               />
               <h2 className="text-2xl font-light mt-4">{title}</h2>
-              <p className="text-base font-light text-[#6E6E73]">{description}</p>
+              <p className="text-sm sm:text-base font-light text-[#6E6E73]">{description}</p>
             </div>
           </a>
         ))}

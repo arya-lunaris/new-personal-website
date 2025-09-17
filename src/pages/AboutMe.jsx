@@ -23,19 +23,28 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className={`ml-65 min-h-screen flex flex-col justify-center items-center transition-all duration-1000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} font-light bg-white text-gray-800 px-12 py-16 -mb-4`}>
-      <h1 className="text-5xl font-extralight mb-8 text-center text-[#1D1D1F]" style={{ fontFamily: 'Fira Code, monospace' }}>About Me</h1>
-      <p className="max-w-3xl text-lg mb-12 text-center leading-relaxed text-[#1D1D1F]">
+    <div className={`ml-40 md:ml-65 min-h-screen flex flex-col justify-center items-center transition-all duration-1000
+                    ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
+                    font-light bg-white text-gray-800 px-4 sm:px-8 md:px-12 py-12 sm:py-10`}>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 text-center text-[#1D1D1F]"
+        style={{ fontFamily: 'Fira Code, monospace' }}>
+        About Me
+      </h1>
+      <p className="max-w-full sm:max-w-2xl md:max-w-3xl text-sm sm:text-base md:text-lg mb-8 sm:mb-12 text-center leading-relaxed text-[#1D1D1F]">
         Coming from backgrounds in healthcare and fashion, I developed a strong sense of empathy, an eye for design, and a natural problem-solving mindset. But I’ve always had a deep affinity for the internet, technology, and gaming — you could say I’m a bit of a nerd at heart. I decided to finally pursue that passion and made a bold career pivot, graduating from General Assembly’s Software Engineering bootcamp in 2025. There, I gained hands-on experience with modern web development tools and practices. I’m especially drawn to front-end development, where I can combine my creative instincts with technical skills to build clean, user-friendly experiences. I’m excited to explore the vast opportunities in tech, and one day, I hope to find a place in the gaming industry.
       </p>
-
-      <div className="w-full max-w-4xl">
-        <h2 className="text-2xl font-light mb-4" style={{ fontFamily: 'Fira Code, monospace' }}>Languages & Tools</h2>
-        <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+      <div className="w-full max-w-full sm:max-w-3xl md:max-w-4xl">
+        <h2 className="text-sm sm:text-base md:text-[18px] font-light mb-3 sm:mb-4" style={{ fontFamily: 'Fira Code, monospace' }}>
+          Languages & Tools
+        </h2>
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3 md:gap-4">
           {languages.map((lang) => (
-            <li key={lang.name} className={`flex flex-col items-center bg-gray-50 rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow duration-500 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <img src={lang.img} alt={lang.name} className="h-12 w-12 mb-2" />
-              <span className="text-gray-700 text-sm" style={{ fontFamily: 'Fira Code, monospace' }}>{lang.name}</span>
+            <li key={lang.name} className={`flex flex-col items-center bg-gray-50 rounded-lg p-2 sm:p-3 md:p-3 shadow-sm hover:shadow-md transition-shadow duration-500
+                                          ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <img src={lang.img} alt={lang.name} className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 mb-1 sm:mb-2" />
+              <span className="text-gray-700 text-xs sm:text-sm md:text-sm" style={{ fontFamily: 'Fira Code, monospace' }}>
+                {lang.name}
+              </span>
             </li>
           ))}
         </ul>
