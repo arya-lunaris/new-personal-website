@@ -37,7 +37,7 @@ export default function Contact() {
           rel="noopener noreferrer"
           className="flex items-center font-medium transform transition duration-300 hover:scale-105 ml-3 text-[#1D1D1F] text-sm sm:text-base md:text-lg"
         >
-          <img src="https://imgur.com/VgQ0gk0.gif" alt="GitHub icon" className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 mr-2" />
+          <img src="https://imgur.com/VgQ0gk0.gif" alt="GitHub icon" className="h-9 w-9 sm:h-10 sm:w-10 md:h-14 md:w-14 mr-2" />
           GitHub
         </a>
       </div>
