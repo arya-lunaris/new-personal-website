@@ -2,7 +2,10 @@ import React from 'react';
 
 export default function NavBar() {
   return (
-    <nav className="fixed top-0 left-0 h-screen w-40 md:w-65 bg-[#F5F5F8] shadow-[0_8px_30px_rgba(0,0,0,0.35)] flex flex-col items-center z-50">
+    <nav
+      className="fixed top-0 left-0 h-screen w-40 md:w-65 shadow-[0_8px_30px_rgba(0,0,0,0.35)] flex flex-col items-center z-50 bg-cover bg-center"
+      style={{ backgroundImage: "url('https://i.imgur.com/LO5uYJP.jpeg')" }}
+    >
       <div className="mt-5">
         {/* Logo */}
         <a href="/">

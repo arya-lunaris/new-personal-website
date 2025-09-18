@@ -49,7 +49,7 @@ export default function Projects() {
     <div className="min-h-screen flex flex-col justify-center items-center ml-40 md:ml-65 px-4 sm:px-8 md:px-12 py-12 sm:py-10 transition-all duration-1000 font-light bg-white text-[#1D1D1F]">
       <h1
         style={{ fontFamily: "'Fira Code', monospace" }}
-        className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 text-center text-[#1D1D1F] transition-all duration-1000 ${
+        className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-10 md:mb-15 text-center text-[#1D1D1F] transition-all duration-1000 ${
           fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
