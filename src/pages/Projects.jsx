@@ -39,10 +39,13 @@ const projects = [
 ];
 
 export default function Projects() {
-  const [fadeIn, setFadeIn] = useState(false);
+  const [fadeInTitle, setFadeInTitle] = useState(false);
+  const [fadeInGrid, setFadeInGrid] = useState(false);
 
   useEffect(() => {
-    setFadeIn(true);
+    setFadeInTitle(true);
+    const gridTimer = setTimeout(() => setFadeInGrid(true), 250);
+    return () => clearTimeout(gridTimer);
   }, []);
 
   return (
@@ -50,12 +53,14 @@ export default function Projects() {
       <h1
         style={{ fontFamily: "'Fira Code', monospace" }}
         className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-10 md:mb-15 text-center text-[#1D1D1F] transition-all duration-1000 ${
-          fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+          fadeInTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
         &lt;Projects&gt;
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-8 md:gap-12 max-w-7xl w-full">
+      <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-8 md:gap-12 max-w-7xl w-full transition-all duration-1000 ${
+        fadeInGrid ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+      }`}>
         {projects.map(({ title, description, image, link }) => (
           <a
             key={title}
@@ -64,11 +69,7 @@ export default function Projects() {
             rel="noopener noreferrer"
             className="flex flex-col items-center text-center space-y-4"
           >
-            <div
-              className={`transition-all duration-1000 ${
-                fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-              } w-full transform hover:scale-105 hover:brightness-110`}
-            >
+            <div className="w-full transform hover:scale-105 hover:brightness-110 transition-all duration-500">
               <img
                 src={image}
                 alt={`${title} screenshot`}
