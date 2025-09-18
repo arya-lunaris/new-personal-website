@@ -53,7 +53,7 @@ export default function Projects() {
           fadeIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
-        Projects
+        &lt;Projects&gt;
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-8 md:gap-12 max-w-7xl w-full">
         {projects.map(({ title, description, image, link }) => (

@@ -32,8 +32,9 @@ export default function Contact() {
           boxShadow: '10px 10px 25px rgba(0,0,0,0.8)',
         }}
       >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extralight mb-3 text-center text-[#1D1D1F]">
-          Contact
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extralight mb-3 text-center text-[#1D1D1F]"
+        style={{ fontFamily: 'Fira Code, monospace'}}>
+          &lt;Contact&gt;
         </h1>
         <p className="text-center text-sm sm:text-base md:text-lg sm:mb-10 mb-5 max-w-xl font-light text-[#1D1D1F]">
           Feel free to reach out through any of the platforms below!
