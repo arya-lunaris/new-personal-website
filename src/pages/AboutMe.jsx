@@ -23,7 +23,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className={`ml-40 md:ml-65 min-h-screen flex flex-col justify-center items-center transition-all duration-1000
+    <div className={`ml-40 sm:ml-65 min-h-screen flex flex-col justify-center items-center transition-all duration-1000
                     ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
                     font-light bg-white text-gray-800 px-4 sm:px-8 md:px-12 py-12 sm:py-10`}>
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 text-center text-[#1D1D1F]"

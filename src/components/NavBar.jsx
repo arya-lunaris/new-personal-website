@@ -3,7 +3,7 @@ import React from 'react';
 export default function NavBar() {
   return (
     <nav
-      className="fixed top-0 left-0 h-screen w-40 md:w-65 shadow-[0_8px_30px_rgba(0,0,0,0.35)] flex flex-col items-center z-50 bg-cover bg-center"
+      className="fixed top-0 left-0 h-screen w-40 bg-[white] md:w-65 shadow-[0_8px_30px_rgba(0,0,0,0.35)] flex flex-col items-center z-50 bg-cover bg-center"
       style={{ backgroundImage: "url('https://i.imgur.com/LO5uYJP.jpeg')" }}
     >
       <div className="mt-5">
@@ -22,7 +22,7 @@ export default function NavBar() {
         <div className="relative">
           <a
             href="/"
-            className="relative hover:no-underline hover:text-[#1D1D1F] after:content-[''] after:block after:h-1 after:w-1 after:rounded-full after:bg-[#1D1D1F] after:mx-auto after:mt-1 after:opacity-0 hover:after:opacity-100 after:transition inline-block transform transition duration-300 hover:scale-105"
+            className="relative hover:no-underline hover:text-[#880808] after:content-[''] after:block after:h-1 after:w-1 after:rounded-full after:bg-[#880808] after:mx-auto after:mt-1 after:opacity-0 hover:after:opacity-100 after:transition inline-block transform transition duration-300 hover:scale-105"
           >
             Home
           </a>
@@ -30,7 +30,7 @@ export default function NavBar() {
         <div className="relative">
           <a
             href="/about"
-            className="relative hover:no-underline hover:text-[#1D1D1F] after:content-[''] after:block after:h-1 after:w-1 after:rounded-full after:bg-[#1D1D1F] after:mx-auto after:mt-1 after:opacity-0 hover:after:opacity-100 after:transition inline-block transform transition duration-300 hover:scale-105"
+            className="relative hover:no-underline hover:text-[#880808] after:content-[''] after:block after:h-1 after:w-1 after:rounded-full after:bg-[#880808] after:mx-auto after:mt-1 after:opacity-0 hover:after:opacity-100 after:transition inline-block transform transition duration-300 hover:scale-105"
           >
             About
           </a>
@@ -38,7 +38,7 @@ export default function NavBar() {
         <div className="relative">
           <a
             href="/projects"
-            className="relative hover:no-underline hover:text-[#1D1D1F] after:content-[''] after:block after:h-1 after:w-1 after:rounded-full after:bg-[#1D1D1F] after:mx-auto after:mt-1 after:opacity-0 hover:after:opacity-100 after:transition inline-block transform transition duration-300 hover:scale-105"
+            className="relative hover:no-underline hover:text-[#880808] after:content-[''] after:block after:h-1 after:w-1 after:rounded-full after:bg-[#880808] after:mx-auto after:mt-1 after:opacity-0 hover:after:opacity-100 after:transition inline-block transform transition duration-300 hover:scale-105"
           >
             Projects
           </a>
@@ -46,7 +46,7 @@ export default function NavBar() {
         <div className="relative">
           <a
             href="/contact"
-            className="relative hover:no-underline hover:text-[#1D1D1F] after:content-[''] after:block after:h-1 after:w-1 after:rounded-full after:bg-[#1D1D1F] after:mx-auto after:mt-1 after:opacity-0 hover:after:opacity-100 after:transition inline-block transform transition duration-300 hover:scale-105"
+            className="relative hover:no-underline hover:text-[#880808] after:content-[''] after:block after:h-1 after:w-1 after:rounded-full after:bg-[#880808] after:mx-auto after:mt-1 after:opacity-0 hover:after:opacity-100 after:transition inline-block transform transition duration-300 hover:scale-105"
           >
             Contact
           </a>
