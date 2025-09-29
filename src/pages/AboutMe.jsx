@@ -39,7 +39,7 @@ const AboutMe = () => {
         </h2>
         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3 md:gap-4">
           {languages.map((lang) => (
-            <li key={lang.name} className={`flex flex-col items-center bg-[url('https://i.imgur.com/LO5uYJP.jpeg')] bg-cover bg-center rounded-lg p-2 sm:p-3 md:p-3 shadow-sm hover:shadow-md transition-shadow duration-500
+            <li key={lang.name} className={`flex flex-col items-center bg-[#F5F5F7] bg-cover bg-center rounded-lg p-2 sm:p-3 md:p-3 shadow-sm hover:shadow-md transition-shadow duration-500
                                           ${loaded ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}`}>
               <img src={lang.img} alt={lang.name} className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 mb-1 sm:mb-2" />
               <span className="text-gray-700 text-xs sm:text-sm md:text-sm" style={{ fontFamily: 'Fira Code, monospace' }}>

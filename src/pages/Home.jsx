@@ -10,11 +10,11 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex h-screen w-full bg-[#101010] relative font-[Fira Code] -mb-4">
+    <div className="flex h-screen w-full bg-[white] relative font-[Fira Code] -mb-4">
         {/* Black strip */}
       <div
-        className={`flex-1 h-12/12 transition-opacity duration-1000 ease-out ${loaded ? 'opacity-100' : 'opacity-0'} absolute top-1/2 w-full h-100 -translate-y-1/2 z-0`}
-        style={{ backgroundImage: "url('https://i.imgur.com/DY2nZzy.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+        className={`flex-1 h-12/12 bg-[#141414] transition-opacity duration-1000 ease-out ${loaded ? 'opacity-100' : 'opacity-0'} absolute top-1/2 w-full h-100 -translate-y-1/2 z-0`}
+        
       ></div>
       <div className="flex-1 flex relative z-10 w-full -ml-20">
         {/* Headshot */}
@@ -51,7 +51,7 @@ function Home() {
 
             <a
               href="/contact"
-              className={`transition-all duration-500 ease-out ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} text-[15px] -mt-5 px-4 py-2 rounded-full border-1 border-[#F5F5F8] text-[#F5F5F8] hover:bg-[#410100] hover:border-[#410100] hover:text-white inline-block text-center`}
+              className={`transition-all duration-500 ease-out transform hover:scale-110 hover:shadow-lg ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} text-[15px] -mt-5 px-4 py-2 rounded-full border-1 border-[#F5F5F8] text-[#F5F5F8] hover:bg-[#F5F5F8] hover:border-[#F5F5F8] hover:text-black inline-block text-center`}
             >
               Say Hello 👋
             </a>
