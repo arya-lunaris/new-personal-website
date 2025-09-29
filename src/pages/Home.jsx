@@ -20,7 +20,7 @@ function Home() {
         {/* Headshot */}
         <div className={`md:ml-80 flex-1 h-12/12 transition-all duration-500 ease-out ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <img
-            src="https://i.imgur.com/g6ytR9U.png"
+            src="https://i.imgur.com/3hazGIv.jpeg"
             alt="Arya headshot"
             className="w-7/12 h-10/12 object-cover rounded-3xl mx-auto ml-80 mt-20 shadow-2xl shadow-gray-800/50"
             style={{ boxShadow: '10px 10px 25px rgba(0,0,0,0.8)' }}
