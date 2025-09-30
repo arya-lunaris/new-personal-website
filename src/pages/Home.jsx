@@ -1,26 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import '../index.css'; 
+import '../index.css';
+import LightDarkButton from '../components/LightDarkButton';
 
-function Home() {
+function Home({ theme, toggleTheme }) {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     setLoaded(true);
   }, []);
 
+  const headshotSrc = theme === 'dark' ? 'https://i.imgur.com/3hazGIv.jpeg' : 'https://i.imgur.com/g6ytR9U.png';
+
   return (
-    <div className="flex h-screen w-full bg-[white] relative font-[Fira Code] -mb-4">
-        {/* Black strip */}
+    <div className={`flex h-screen w-full relative font-[Fira Code] -mb-4 transition-colors duration-500 ${theme === 'dark' ? 'bg-[#121212]' : 'bg-white'}`}>
+      <LightDarkButton theme={theme} toggleTheme={toggleTheme} />
+
+      {/* Black strip */}
       <div
-        className={`flex-1 h-12/12 bg-[#141414] transition-opacity duration-1000 ease-out ${loaded ? 'opacity-100' : 'opacity-0'} absolute top-1/2 w-full h-100 -translate-y-1/2 z-0`}
-        
+        className={`flex-1 h-12/12 bg-[#1a1a1a] transition-opacity duration-1000 ease-out ${loaded ? 'opacity-100' : 'opacity-0'} absolute top-1/2 w-full h-100 -translate-y-1/2 z-0`}
       ></div>
+
       <div className="flex-1 flex relative z-10 w-full -ml-20">
         {/* Headshot */}
         <div className={`md:ml-80 flex-1 h-12/12 transition-all duration-500 ease-out ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <img
-            src="https://i.imgur.com/3hazGIv.jpeg"
+            src={headshotSrc}
             alt="Arya headshot"
             className="w-7/12 h-10/12 object-cover rounded-3xl mx-auto ml-80 mt-20 shadow-2xl shadow-gray-800/50"
             style={{ boxShadow: '10px 10px 25px rgba(0,0,0,0.8)' }}
@@ -58,6 +63,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <style>{`
         @keyframes blink {
           0%, 50%, 100% { opacity: 1; }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import LightDarkButton from '../components/LightDarkButton';
 
 const projects = [
   {
@@ -38,7 +39,7 @@ const projects = [
   },
 ];
 
-export default function Projects() {
+export default function Projects({ theme, toggleTheme }) {
   const [fadeInTitle, setFadeInTitle] = useState(false);
   const [fadeInGrid, setFadeInGrid] = useState(false);
 
@@ -48,19 +49,18 @@ export default function Projects() {
     return () => clearTimeout(gridTimer);
   }, []);
 
+  const bgClass = theme === 'dark' ? 'bg-[#121212] text-white' : 'bg-white text-[#1D1D1F]';
+
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center ml-40 md:ml-65 px-4 sm:px-8 md:px-12 py-12 sm:py-10 transition-all duration-1000 font-light bg-white text-[#1D1D1F]">
+    <div className={`min-h-screen flex flex-col justify-center items-center ml-40 md:ml-65 px-4 sm:px-8 md:px-12 py-12 sm:py-10 transition-all duration-1000 font-light ${bgClass}`}>
+      <LightDarkButton theme={theme} toggleTheme={toggleTheme} />
       <h1
         style={{ fontFamily: "'Fira Code', monospace" }}
-        className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-10 md:mb-15 text-center text-[#1D1D1F] transition-all duration-1000 ${
-          fadeInTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-        }`}
+        className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-10 md:mb-15 text-center transition-all duration-1000 ${fadeInTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
       >
         &lt;Projects&gt;
       </h1>
-      <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-8 md:gap-12 max-w-7xl w-full transition-all duration-1000 ${
-        fadeInGrid ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-      }`}>
+      <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-8 md:gap-12 max-w-7xl w-full transition-all duration-1000 ${fadeInGrid ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
         {projects.map(({ title, description, image, link }) => (
           <a
             key={title}
@@ -75,8 +75,8 @@ export default function Projects() {
                 alt={`${title} screenshot`}
                 className="w-full h-48 object-cover rounded-lg shadow-md"
               />
-              <h2 className="text-2xl font-light mt-4">{title}</h2>
-              <p className="text-sm sm:text-base font-light text-[#6E6E73]">{description}</p>
+              <h2 className={`text-2xl font-light mt-4 ${theme === 'dark' ? 'text-white' : 'text-[#1D1D1F]'}`}>{title}</h2>
+              <p className={`text-sm sm:text-base font-light ${theme === 'dark' ? 'text-white' : 'text-[#6E6E73]'}`}>{description}</p>
             </div>
           </a>
         ))}

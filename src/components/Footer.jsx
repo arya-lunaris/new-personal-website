@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default function Footer() {
+export default function Footer({ theme }) {
+  const bgClass = theme === 'dark' ? 'bg-[#141414] text-white' : 'bg-white text-gray-700';
+
   return (
-    <footer className="mt-auto w-screen bg-white py-2 sm:py-3 md:py-4 flex flex-col items-center md:items-center sm:items-start text-gray-700 font-light ml-20 sm:ml-28 md:ml-35 text-sm sm:text-base">
-      <div className="border-t border-gray-200 w-max">
+    <footer className={`mt-auto w-screen py-2 sm:py-3 md:py-4 flex flex-col items-center md:items-center sm:items-start font-light ml-20 sm:ml-28 md:ml-35 text-sm sm:text-base transition-colors duration-500 ${bgClass}`}>
+      <div>
         <p className="mt-[3px] -mb-5">
           © 2025 Arya Lunaris. All rights reserved.
         </p>
