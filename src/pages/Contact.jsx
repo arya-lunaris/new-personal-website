@@ -13,6 +13,12 @@ export default function Contact({ theme, toggleTheme }) {
 
   const bgClass = theme === 'dark' ? 'bg-[#121212] text-white' : 'bg-white text-[#1D1D1F]';
 
+  const icons = {
+    email: 'https://i.imgur.com/jehmrOK.gif',
+    linkedin: 'https://i.imgur.com/PfmSMJY.gif',
+    github: 'https://i.imgur.com/v8S8ksO.gif',
+  };
+
   return (
     <div className={`min-h-screen flex flex-col justify-center items-center -mt-10 ml-40 md:ml-65 px-4 sm:px-8 md:px-12 py-12 font-[Fira Code] transition-all duration-750 ${bgClass}`}>
       <LightDarkButton theme={theme} toggleTheme={toggleTheme} />
@@ -23,27 +29,25 @@ export default function Contact({ theme, toggleTheme }) {
       >
         &lt;Contact&gt;
       </h1>
+
       <p className={`text-center text-sm sm:text-base md:text-lg mb-10 max-w-xl transition-all duration-750 ${fadeInTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
         Feel free to reach out for project requests, collaborations, or any questions you might have. I'm always happy to connect and discuss new ideas!
       </p>
+
       <div className={`grid sm:grid-cols-3 gap-8 mt-10 w-full max-w-4xl transition-all duration-750 ${fadeInGrid ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
         <a href="mailto:arya.ram.dev@outlook.com" className="flex flex-col items-center font-medium text-sm sm:text-base md:text-lg transform transition duration-500 hover:scale-105">
-          <div className="bg-white rounded-full w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex flex-col items-center justify-center p-4 border border-black">
-            <img src="https://i.imgur.com/37uFyH0.gif" alt="Email icon" className="h-12 w-12 sm:h-16 sm:w-16 mb-2" />
-            <span className="text-[#1D1D1F]">Email</span>
-          </div>
+          <img src={icons.email} alt="Email icon" className="h-16 w-16 sm:h-20 sm:w-20 mb-2" />
+          <span className={`${theme === 'dark' ? 'text-white' : 'text-[#1D1D1F]'}`}>Email</span>
         </a>
+
         <a href="https://linkedin.com/in/arya-ram-" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center font-medium text-sm sm:text-base md:text-lg transform transition duration-500 hover:scale-105">
-          <div className="bg-white rounded-full w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex flex-col items-center justify-center p-4 border border-black">
-            <img src="https://i.imgur.com/AmYxG7F.gif" alt="LinkedIn icon" className="h-12 w-12 sm:h-16 sm:w-16 mb-2" />
-            <span className="text-[#1D1D1F]">LinkedIn</span>
-          </div>
+          <img src={icons.linkedin} alt="LinkedIn icon" className="h-16 w-16 sm:h-20 sm:w-20 mb-2" />
+          <span className={`${theme === 'dark' ? 'text-white' : 'text-[#1D1D1F]'}`}>LinkedIn</span>
         </a>
+
         <a href="https://github.com/arya-lunaris" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center font-medium text-sm sm:text-base md:text-lg transform transition duration-500 hover:scale-105">
-          <div className="bg-white rounded-full w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 flex flex-col items-center justify-center p-4 border border-black">
-            <img src="https://i.imgur.com/VgQ0gk0.gif" alt="GitHub icon" className="h-12 w-12 sm:h-16 sm:w-16 mb-2" />
-            <span className="text-[#1D1D1F]">GitHub</span>
-          </div>
+          <img src={icons.github} alt="GitHub icon" className="h-16 w-16 sm:h-20 sm:w-20 mb-2" />
+          <span className={`${theme === 'dark' ? 'text-white' : 'text-[#1D1D1F]'}`}>GitHub</span>
         </a>
       </div>
     </div>
