@@ -17,11 +17,11 @@ export default function NavBar() {
       </div>
 
       {/* Links */}
-      <div className="flex-1 flex flex-col justify-center space-y-6 text-[#1D1D1F] font-['Fira_Code'] mb-30 text-center text-[17px]">
+      <div className="flex-1 flex flex-col justify-center space-y-6 text-[#1D1D1F] font-['Fira_Code'] text-center text-[17px]">
         <div className="relative">
           <a
             href="/"
-            className="relative hover:no-underline hover:text-[#1D1D1F] after:content-[''] after:block after:h-[2px] after:w-0 after:bg-[#1D1D1F] after:mx-auto after:mt-1 after:transition-all after:duration-300 hover:after:w-full inline-block transform transition duration-300 hover:scale-105"
+            className="relative hover:no-underline hover:text-[#1D1D1F] hover:font-medium inline-block transform transition-all duration-500"
           >
             Home
           </a>
@@ -29,7 +29,7 @@ export default function NavBar() {
         <div className="relative">
           <a
             href="/about"
-            className="relative hover:no-underline hover:text-[#1D1D1F] after:content-[''] after:block after:h-[2px] after:w-0 after:bg-[#1D1D1F] after:mx-auto after:mt-1 after:transition-all after:duration-300 hover:after:w-full inline-block transform transition duration-300 hover:scale-105"
+            className="relative hover:no-underline hover:text-[#1D1D1F] hover:font-medium inline-block transform transition-all duration-500"
           >
             About
           </a>
@@ -37,7 +37,7 @@ export default function NavBar() {
         <div className="relative">
           <a
             href="/projects"
-            className="relative hover:no-underline hover:text-[#1D1D1F] after:content-[''] after:block after:h-[2px] after:w-0 after:bg-[#1D1D1F] after:mx-auto after:mt-1 after:transition-all after:duration-300 hover:after:w-full inline-block transform transition duration-300 hover:scale-105"
+            className="relative hover:no-underline hover:text-[#1D1D1F] hover:font-medium inline-block transform transition-all duration-500"
           >
             Projects
           </a>
@@ -45,11 +45,24 @@ export default function NavBar() {
         <div className="relative">
           <a
             href="/contact"
-            className="relative hover:no-underline hover:text-[#1D1D1F] after:content-[''] after:block after:h-[2px] after:w-0 after:bg-[#1D1D1F] after:mx-auto after:mt-1 after:transition-all after:duration-300 hover:after:w-full inline-block transform transition duration-300 hover:scale-105"
+            className="relative hover:no-underline hover:text-[#1D1D1F] hover:font-medium inline-block transform transition-all duration-500"
           >
             Contact
           </a>
         </div>
+      </div>
+
+      {/* Social Icons */}
+      <div className="mb-6 flex flex-row justify-center space-x-6">
+        <a href="mailto:arya.ram.dev@outlook.com" className="flex items-center transform transition duration-500 hover:scale-110">
+          <img src="https://imgur.com/XgkoBMa.png" alt="Email icon" className="h-6 w-6 sm:h-8 sm:w-8" />
+        </a>
+        <a href="https://linkedin.com/in/arya-ram-" className="flex items-center transform transition duration-500 hover:scale-110">
+          <img src="https://i.imgur.com/LTVUBVS.png" alt="LinkedIn icon" className="h-6 w-6 sm:h-8 sm:w-8" />
+        </a>
+        <a href="https://github.com/arya-lunaris" className="flex items-center transform transition duration-500 hover:scale-110">
+          <img src="https://i.imgur.com/VDLFjQj.png" alt="GitHub icon" className="h-6 w-6 sm:h-8 sm:w-8" />
+        </a>
       </div>
     </nav>
   );
