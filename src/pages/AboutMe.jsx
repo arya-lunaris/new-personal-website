@@ -24,13 +24,13 @@ const AboutMe = ({ theme, toggleTheme }) => {
   }, []);
 
   return (
-    <div className={`ml-40 sm:ml-65 min-h-screen flex flex-col justify-center items-center 
+    <div className={`ml-40 sm:ml-40 md:ml-65 min-h-screen flex flex-col justify-center items-center 
                     font-light px-4 sm:px-8 md:px-12 py-12 sm:py-10 transition-all duration-750
                     ${theme === 'dark' ? 'bg-[#121212] text-white' : 'bg-white text-[#1D1D1F]'}`}>
       <LightDarkButton theme={theme} toggleTheme={toggleTheme} />
 
-      <h1 className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 text-center transition-all duration-750 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-        style={{ fontFamily: 'Fira Code, monospace' }}>
+      <h1 className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-6 sm:mb-8 text-center transition-all duration-750 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} mt-0 sm:mt-15 md:mt-10`}
+        style={{ fontFamily: 'Fira Code, monospace'}}>
         &lt;About Me&gt;
       </h1>
 

@@ -23,7 +23,7 @@ function Home({ theme, toggleTheme }) {
 
       <div className="flex-1 flex relative z-10 w-full -ml-20">
         {/* Headshot */}
-        <div className={`md:ml-80 flex-1 h-12/12 transition-all duration-500 ease-out ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`ml-0 sm:ml-0 md:ml-80 flex-1 h-12/12 transition-all duration-500 ease-out ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <img
             src={headshotSrc}
             alt="Arya headshot"
@@ -33,7 +33,7 @@ function Home({ theme, toggleTheme }) {
         </div>
 
         {/* Right side */}
-        <div className="flex-1 flex flex-col justify-center h-full -ml-50">
+        <div className="flex-1 flex flex-col justify-center h-full -ml-50 sm:-ml-75 md:-ml-50">
           <div className={`flex flex-col items-center w-full transition-opacity duration-2000 ease-out delay-200 ${loaded ? 'opacity-100' : 'opacity-0'}`}>
             {/* Intro */}
             <div className={`w-full transition-all duration-1000 ease-out text-center ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>

@@ -60,7 +60,7 @@ export default function Projects({ theme, toggleTheme }) {
         style={{ fontFamily: "'Fira Code', monospace" }}
         className={`text-3xl sm:text-4xl md:text-5xl font-extralight mb-10 md:mb-15 text-center transition-all duration-1000 ${
           fadeInTitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-        } mt-10 sm:mt-15 md:mt-0`}
+        } mt-10 sm:mt-15 md:mt-10`}
       >
         &lt;Projects&gt;
       </h1>
