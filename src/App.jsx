@@ -6,15 +6,26 @@ import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import LightDarkButton from "./components/LightDarkButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './App.css';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'light';
+  });
 
   const toggleTheme = () => {
-    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+    setTheme(prev => {
+      const newTheme = prev === 'light' ? 'dark' : 'light';
+      localStorage.setItem('theme', newTheme);
+      return newTheme;
+    });
   };
+
+  useEffect(() => {
+    document.body.className = '';
+    document.body.classList.add(theme === 'dark' ? 'bg-[#1a1a1a]' : 'bg-white');
+  }, [theme]);
 
   return (
     <Router>
