@@ -14,9 +14,9 @@ export default function Contact({ theme, toggleTheme }) {
   const bgClass = theme === 'dark' ? 'bg-[#121212] text-white' : 'bg-white text-[#1D1D1F]';
 
   const icons = {
-    email: 'https://i.imgur.com/jehmrOK.gif',
-    linkedin: 'https://i.imgur.com/PfmSMJY.gif',
-    github: 'https://i.imgur.com/v8S8ksO.gif',
+    email: 'https://i.imgur.com/nfLPiqo.gif',
+    linkedin: 'https://i.imgur.com/6FMDJrd.gif',
+    github: 'https://i.imgur.com/AGA7A04.gif',
   };
 
   return (
