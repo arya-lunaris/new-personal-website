@@ -39,30 +39,31 @@ const AboutMe = ({ theme, toggleTheme }) => {
       </p>
 
       <div className={`w-full max-w-full sm:max-w-3xl md:max-w-4xl transition-all duration-1250 ${loaded ? 'opacity-100 translate-y-0 delay-200' : 'opacity-0 translate-y-10'}`}>
-        <h2 className={`text-sm sm:text-base md:text-[18px] font-light mb-3 sm:mb-4`} style={{ fontFamily: 'Fira Code, monospace' }}>
+        <h2 className={`text-sm sm:text-base md:text-[18px] font-light mb-3 sm:mb-4 mt-10`} style={{ fontFamily: 'Fira Code, monospace' }}>
           Languages & Tools
         </h2>
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3 md:gap-4">
-          {languages.map((lang) => (
-            <li
-              key={lang.name}
-              className={`flex flex-col items-center rounded-lg p-2 sm:p-3 md:p-3 shadow-sm hover:shadow-md transition-shadow duration-500
-    ${theme === 'dark'
-                  ? 'bg-[#252525] text-white'
-                  : 'bg-[#F5F5F7] text-gray-700'} 
-    ${loaded ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}`}
-            >
-              <img
-                src={lang.img}
-                alt={lang.name}
-                className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 mb-1 sm:mb-2"
-              />
-              <span className="text-xs sm:text-sm md:text-sm" style={{ fontFamily: 'Fira Code, monospace' }}>
-                {lang.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+<ul className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-3 md:gap-4 justify-items-center">
+  {languages.map((lang) => (
+    <li
+      key={lang.name}
+      className={`flex flex-col items-center rounded-lg p-2 sm:p-3 md:p-3 shadow-sm hover:shadow-md transition-shadow duration-500
+        ${theme === 'dark'
+          ? 'bg-[#252525] text-white'
+          : 'bg-[#F5F5F7] text-gray-700'} 
+        ${loaded ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}
+        w-[80%] sm:w-full`}
+    >
+      <img
+        src={lang.img}
+        alt={lang.name}
+        className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 mb-1 sm:mb-2"
+      />
+      <span className="text-xs sm:text-sm md:text-sm" style={{ fontFamily: 'Fira Code, monospace' }}>
+        {lang.name}
+      </span>
+    </li>
+  ))}
+</ul>
       </div>
     </div>
   );

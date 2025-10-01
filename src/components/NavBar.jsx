@@ -3,7 +3,7 @@ import React from 'react';
 export default function NavBar({ theme }) {
   return (
     <nav
-      className={`fixed top-0 left-0 h-screen w-40 md:w-65 shadow-[0_8px_30px_rgba(0,0,0,0.35)] flex flex-col items-center z-50 bg-cover bg-center ${theme === 'dark' ? 'bg-[#1a1a1a] text-white' : 'bg-[#F5F5F7] text-[#1D1D1F]'}`}
+      className={`fixed top-0 left-0 h-screen w-40 md:w-65 shadow-[0_8px_30px_rgba(0,0,0,0.35)] flex flex-col items-center z-50 bg-cover bg-center ${theme === 'dark' ? 'bg-[#1a1a1a] text-white' : 'bg-[white] text-[#1D1D1F]'}`}
     >
       <div className="mt-5">
         {/* Logo */}
