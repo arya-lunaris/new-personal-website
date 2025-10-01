@@ -51,7 +51,7 @@ const AboutMe = ({ theme, toggleTheme }) => {
           ? 'bg-[#252525] text-white'
           : 'bg-[#F5F5F7] text-gray-700'} 
         ${loaded ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}
-        w-[80%] sm:w-full`}
+        w-[90%] sm:w-full`}
     >
       <img
         src={lang.img}
