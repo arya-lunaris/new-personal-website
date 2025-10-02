@@ -19,54 +19,25 @@ export default function NavBar({ theme }) {
 
       {/* Links */}
       <div className="flex-1 flex flex-col justify-center space-y-6 font-['Fira_Code'] text-center text-[17px]">
-        <div className="relative">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `relative hover:no-underline hover:font-medium inline-block transform transition-all duration-500 before:content-['>'] before:mr-2 before:inline-block before:opacity-0 before:-translate-x-[5px] before:transition-all before:duration-300 ${
-                isActive ? "before:opacity-100 before:translate-x-0 font-medium" : ""
-              }`
-            }
-          >
-            Home
-          </NavLink>
-        </div>
-        <div className="relative">
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `relative hover:no-underline hover:font-medium inline-block transform transition-all duration-500 before:content-['>'] before:mr-2 before:inline-block before:opacity-0 before:-translate-x-[5px] before:transition-all before:duration-300 ${
-                isActive ? "before:opacity-100 before:translate-x-0 font-medium" : ""
-              }`
-            }
-          >
-            About
-          </NavLink>
-        </div>
-        <div className="relative">
-          <NavLink
-            to="/projects"
-            className={({ isActive }) =>
-              `relative hover:no-underline hover:font-medium inline-block transform transition-all duration-500 before:content-['>'] before:mr-2 before:inline-block before:opacity-0 before:-translate-x-[5px] before:transition-all before:duration-300 ${
-                isActive ? "before:opacity-100 before:translate-x-0 font-medium" : ""
-              }`
-            }
-          >
-            Projects
-          </NavLink>
-        </div>
-        <div className="relative">
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `relative hover:no-underline hover:font-medium inline-block transform transition-all duration-500 before:content-['>'] before:mr-2 before:inline-block before:opacity-0 before:-translate-x-[5px] before:transition-all before:duration-300 ${
-                isActive ? "before:opacity-100 before:translate-x-0 font-medium" : ""
-              }`
-            }
-          >
-            Contact
-          </NavLink>
-        </div>
+        {['/', '/about', '/projects', '/contact'].map((path) => {
+          const label = path === '/' ? 'Home' : path.slice(1).charAt(0).toUpperCase() + path.slice(2);
+          return (
+            <div key={path} className="relative">
+              <NavLink
+                to={path}
+                className={({ isActive }) =>
+                  `inline-block transform transition-transform duration-750 ${!isActive ? 'hover:translate-x-2' : ''} relative ${
+                    isActive
+                      ? 'font-medium before:content-[">"] before:absolute before:left-[-1.2rem] before:opacity-100 before:translate-x-0'
+                      : 'before:content-[">"] before:absolute before:left-[-1.2rem] before:opacity-0 before:-translate-x-[5px] before:transition-all before:duration-300'
+                  }`
+                }
+              >
+                {label}
+              </NavLink>
+            </div>
+          );
+        })}
       </div>
 
       {/* Social Icons */}
