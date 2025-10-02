@@ -15,8 +15,8 @@ export default function LightDarkButton({ theme, toggleTheme }) {
                 <>
                     Dark
                     <img
-                        src="https://i.imgur.com/1JDEGN9.png"
-                        alt="Moon icon"
+                        src="/images/dark-mode.png"
+                        alt="Dark icon"
                         className="inline w-4 h-4 ml-2 -mt-1"
                     />
                 </>
@@ -24,8 +24,8 @@ export default function LightDarkButton({ theme, toggleTheme }) {
                 <>
                     Light
                     <img
-                        src="https://i.imgur.com/vU6L0bz.png"
-                        alt="Sun icon"
+                        src="/images/light-mode.png"
+                        alt="Light icon"
                         className="inline w-6 h-6 ml-2 -mt-1"
                     />
                 </>
