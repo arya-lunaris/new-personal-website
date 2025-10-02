@@ -56,7 +56,7 @@ function Home({ theme, toggleTheme }) {
 
             <a
               href="/contact"
-              className={`transition-all duration-500 ease-out transform hover:scale-110 hover:shadow-lg ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} text-[15px] -mt-5 px-4 py-2 rounded-full border-1 border-[#F5F5F8] text-[#F5F5F8] hover:bg-[#F5F5F8] hover:border-[#F5F5F8] hover:text-black inline-block text-center`}
+              className={`transition-all duration-500 bg-[#1a1a1a] ease-out transform hover:scale-110 hover:shadow-lg ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} text-[15px] -mt-5 px-4 py-2 rounded-full border-1 border-[#F5F5F8] text-[#F5F5F8] hover:bg-[#F5F5F8] hover:border-[#F5F5F8] hover:text-black inline-block text-center`}
             >
               Say Hello 👋
             </a>
