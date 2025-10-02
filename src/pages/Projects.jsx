@@ -6,35 +6,35 @@ const projects = [
     title: 'PSQuest',
     description:
       'A web-based multiplayer RPG game featuring quests, battles, and character progression, built with Phaser and Node.js.',
-    image: 'https://imgur.com/rHGJUW1.png',
+    image: '/images/psquest.png',
     link: 'https://psquest.netlify.app/',
   },
   {
     title: 'Toonder',
     description:
       'A task and project management tool designed for teams to collaborate efficiently, developed using React and Django.',
-    image: 'https://imgur.com/XJc2So8.png',
+    image: '/images/toonder.jpg',
     link: 'https://app-toonder.netlify.app/',
   },
   {
     title: 'Stranger Tales',
     description:
       'An interactive storytelling platform where users can create and share their own stories, created with Vue.js and Firebase.',
-    image: 'https://imgur.com/y4os3JF.png',
+    image: '/images/stranger-tales.png',
     link: 'https://stranger-tales.netlify.app/',
   },
   {
     title: 'Wordle',
     description:
       'A clone of the popular word-guessing game with additional features and daily challenges, built using React and TypeScript.',
-    image: 'https://imgur.com/IQOoqH9.png',
+    image: '/images/wordle.png',
     link: 'https://arya-lunaris.github.io/game-project-wordle/',
   },
   {
     title: 'Daft Punk Soundboard',
     description:
       'I made the Daft Punk soundboard for their iconic hit Harder, Better, Faster, Stronger.',
-    image: 'https://imgur.com/IBggIFP.png',
+    image: '/images/daft-punk.png',
     link: 'https://arya-lunaris.github.io/js-soundboard-start/',
   },
 ];

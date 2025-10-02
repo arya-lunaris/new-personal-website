@@ -10,7 +10,7 @@ function Home({ theme, toggleTheme }) {
     setLoaded(true);
   }, []);
 
-  const headshotSrc = theme === 'dark' ? 'https://i.imgur.com/3hazGIv.jpeg' : 'https://i.imgur.com/g6ytR9U.png';
+  const headshotSrc = theme === 'dark' ? '/images/dark-headshot.jpeg' : '/images/light-headshot.png';
 
   return (
     <div className={`flex h-screen w-full relative font-[Fira Code] -mb-4 transition-colors duration-500 ${theme === 'dark' ? 'bg-[#121212]' : 'bg-white'}`}>

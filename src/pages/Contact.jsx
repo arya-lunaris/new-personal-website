@@ -15,16 +15,16 @@ export default function Contact({ theme, toggleTheme }) {
 
   const icons = {
     email: {
-      dark: 'https://i.imgur.com/7oq5a4F.gif',
-      light: 'https://i.imgur.com/qMHwFCc.gif',
+      light: '/images/dark-mail.gif',
+      dark: '/images/light-mail.gif',
     },
     linkedin: {
-      dark: 'https://i.imgur.com/oZTVuc9.gif',
-      light: 'https://i.imgur.com/kWN2oci.gif',
+      light: '/images/dark-linkedin.gif',
+      dark: '/images/light-linkedin.gif',
     },
     github: {
-      dark: 'https://i.imgur.com/Fk3oTVW.gif',
-      light: 'https://i.imgur.com/SfCYFWM.gif',
+      light: '/images/dark-github.gif',
+      dark: '/images/light-github.gif',
     },
   };
 
@@ -45,17 +45,17 @@ export default function Contact({ theme, toggleTheme }) {
 
       <div className={`grid sm:grid-cols-3 gap-8 mt-10 w-full max-w-4xl transition-all duration-750 ${fadeInGrid ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
         <a href="mailto:arya.ram.dev@outlook.com" className="flex flex-col items-center font-medium text-sm sm:text-base md:text-lg transform transition duration-500 hover:scale-105">
-          <img src={icons.email[theme]} alt="Email icon" className="h-16 w-16 sm:h-20 sm:w-20 mb-2" />
+          <img src={theme === 'dark' ? icons.email.dark : icons.email.light} alt="Email icon" className="h-16 w-16 sm:h-20 sm:w-20 mb-2" />
           <span className={`${theme === 'dark' ? 'text-white' : 'text-[#1D1D1F]'}`}>Email</span>
         </a>
 
         <a href="https://linkedin.com/in/arya-ram-" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center font-medium text-sm sm:text-base md:text-lg transform transition duration-500 hover:scale-105">
-          <img src={icons.linkedin[theme]} alt="LinkedIn icon" className="h-16 w-16 sm:h-20 sm:w-20 mb-2" />
+          <img src={theme === 'dark' ? icons.linkedin.dark : icons.linkedin.light} alt="LinkedIn icon" className="h-16 w-16 sm:h-20 sm:w-20 mb-2" />
           <span className={`${theme === 'dark' ? 'text-white' : 'text-[#1D1D1F]'}`}>LinkedIn</span>
         </a>
 
         <a href="https://github.com/arya-lunaris" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center font-medium text-sm sm:text-base md:text-lg transform transition duration-500 hover:scale-105">
-          <img src={icons.github[theme]} alt="GitHub icon" className="h-16 w-16 sm:h-20 sm:w-20 mb-2" />
+          <img src={theme === 'dark' ? icons.github.dark : icons.github.light} alt="GitHub icon" className="h-16 w-16 sm:h-20 sm:w-20 mb-2" />
           <span className={`${theme === 'dark' ? 'text-white' : 'text-[#1D1D1F]'}`}>GitHub</span>
         </a>
       </div>
