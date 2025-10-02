@@ -11,7 +11,10 @@ export default function NavBar({ theme }) {
           <img
             src={theme === 'dark' ? "https://i.imgur.com/BZZuQuD.png" : "https://imgur.com/T7E7ZTl.png"}
             alt="Logo"
-            className="w-10 h-10 rounded-full inline-block transform transition duration-300 hover:scale-110"
+            className={`inline-block transform transition duration-300 hover:scale-110 ${
+              theme === 'dark' ? 'w-13 h-12 -mt-1' : 'w-10 h-10'
+
+            }`}
           />
         </a>
       </div>
