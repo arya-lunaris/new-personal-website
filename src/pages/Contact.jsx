@@ -20,7 +20,7 @@ export default function Contact({ theme, toggleTheme }) {
   };
 
   return (
-    <div className={`min-h-screen flex flex-col justify-center items-center ml-40 md:ml-65 px-4 sm:px-8 md:px-12 py-12 font-[Fira Code] transition-all duration-750 ${bgClass}`}>
+    <div className={`min-h-screen flex flex-col justify-center items-center ml-35 md:ml-65 px-4 sm:px-8 md:px-12 py-12 font-[Fira Code] transition-all duration-750 ${bgClass}`}>
       <LightDarkButton theme={theme} toggleTheme={toggleTheme} />
 
       <h1

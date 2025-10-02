@@ -53,7 +53,7 @@ export default function Projects({ theme, toggleTheme }) {
 
   return (
     <div
-      className={`min-h-screen flex flex-col justify-center items-center ml-40 md:ml-65 px-4 sm:px-8 md:px-12 py-12 sm:py-10 transition-all duration-1000 font-light ${bgClass}`}
+      className={`min-h-screen flex flex-col justify-center items-center ml-35 md:ml-65 px-4 sm:px-8 md:px-12 py-12 sm:py-10 transition-all duration-1000 font-light ${bgClass}`}
     >
       <LightDarkButton theme={theme} toggleTheme={toggleTheme} />
       <h1

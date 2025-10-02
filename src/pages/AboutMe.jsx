@@ -24,7 +24,7 @@ const AboutMe = ({ theme, toggleTheme }) => {
   }, []);
 
   return (
-    <div className={`ml-40 sm:ml-40 md:ml-65 min-h-screen flex flex-col justify-center items-center 
+    <div className={`ml-35 sm:ml-40 md:ml-65 min-h-screen flex flex-col justify-center items-center 
                     font-light px-4 sm:px-8 md:px-12 py-12 sm:py-10 transition-all duration-750
                     ${theme === 'dark' ? 'bg-[#121212] text-white' : 'bg-white text-[#1D1D1F]'}`}>
       <LightDarkButton theme={theme} toggleTheme={toggleTheme} />
@@ -51,7 +51,7 @@ const AboutMe = ({ theme, toggleTheme }) => {
           ? 'bg-[#252525] text-white'
           : 'bg-[#F5F5F7] text-gray-700'} 
         ${loaded ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}
-        w-[90%] sm:w-full`}
+        w-[100%] sm:w-full`}
     >
       <img
         src={lang.img}
