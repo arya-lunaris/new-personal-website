@@ -3,6 +3,13 @@ import LightDarkButton from '../components/LightDarkButton';
 
 const projects = [
   {
+    title: 'Pharmacare',
+    description:
+      'A professional pharmacy website built for a pharmacy I previously worked at. Developed using React, Vite, and styled with Tailwind CSS.',
+    image: '/images/pharmacare.jpg',
+    link: 'https://pharmacare-pharmacy.netlify.app/',
+  },
+  {
     title: 'PSQuest',
     description:
       'A web-based multiplayer RPG game featuring quests, battles, and character progression, built with Phaser and Node.js.',
